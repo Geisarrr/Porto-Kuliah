@@ -1,21 +1,17 @@
-/* =========================================
-   Background & Typography
-   ========================================= */
+
 body {
-    /* REVISI: Background Gradient Midnight Blue ke Dark Charcoal */
+
     background: linear-gradient(135deg, #0a1128 0%, #121212 100%) !important;
-    background-attachment: fixed; /* Mencegah gradient terputus saat di-scroll */
+    background-attachment: fixed;
     
     color: #ffffff;
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
 }
 
-/* =========================================
-   Navbar Sederhana
-   ========================================= */
+
 .custom-navbar {
-    background: rgba(10, 17, 40, 0.8); /* Disesuaikan sedikit agar menyatu dengan gradient */
+    background: rgba(10, 17, 40, 0.8); 
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     position: sticky;
@@ -32,9 +28,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* =========================================
-   Animasi Fade-in Sederhana
-   ========================================= */
+
 .fade-in {
     animation: fadeIn 1s ease-out forwards;
 }
@@ -50,9 +44,7 @@ body {
     }
 }
 
-/* =========================================
-   Hero Section & Typography
-   ========================================= */
+
 .min-vh-75 {
     min-height: 75vh;
 }
@@ -60,13 +52,11 @@ body {
 .text-gradient {
     background: linear-gradient(90deg, #0dcaf0, #0d6efd);
     -webkit-background-clip: text;
-    background-clip: text; /* Tambahkan baris ini biar VS Code gak rewel */
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-/* =========================================
-   Image Glow Effect (Hero Section)
-   ========================================= */
+
 .img-wrapper {
     position: relative;
     display: inline-block;
@@ -98,9 +88,7 @@ body {
     border-color: rgba(13, 202, 240, 0.5);
 }
 
-/* =========================================
-   Glassmorphism Cards (Skills & Experience)
-   ========================================= */
+
 .glass-card {
     background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(12px);
@@ -118,13 +106,13 @@ body {
     box-shadow: 0 15px 40px rgba(13, 110, 253, 0.15);
 }
 
-/* Glass Badge (Hero) */
+
 .glass-badge {
     background: rgba(13, 202, 240, 0.1);
     border: 1px solid rgba(13, 202, 240, 0.2);
 }
 
-/* Icon Box inside Cards */
+
 .icon-box-glass {
     padding: 15px;
     background: rgba(255, 255, 255, 0.05);
@@ -137,11 +125,9 @@ body {
     line-height: 1.6;
 }
 
-/* =========================================
-   Card & Form Elements (Untuk halaman Contact)
-   ========================================= */
+
 .custom-card {
-    background-color: rgba(255, 255, 255, 0.03); /* Sedikit transparan agar menyatu dengan background */
+    background-color: rgba(255, 255, 255, 0.03); 
     border: 1px solid rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(5px);
 }
@@ -162,9 +148,7 @@ body {
     color: #6c757d;
 }
 
-/* =========================================
-   Button Styling & Hover
-   ========================================= */
+
 .custom-btn {
     transition: all 0.3s ease;
     background: linear-gradient(135deg, #0d6efd, #0a58ca);
@@ -176,13 +160,10 @@ body {
     box-shadow: 0 8px 20px rgba(13, 110, 253, 0.4);
 }
 
-/* =========================================
-   REVISI: CONNECT WITH ME SECTION
-   ========================================= */
+
 .connect-section {
     min-height: 80vh; 
     width: 100%;
-    /* EDIT FOTO DI SINI */
     background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); 
     background-size: cover;
     background-position: center;
@@ -205,7 +186,7 @@ body {
     z-index: 1;
 }
 
-/* Styling Social Icons & Hover Effect */
+
 .social-icon {
     font-size: 2.5rem;
     display: inline-block;
@@ -218,7 +199,7 @@ body {
     text-shadow: 0 0 20px rgba(13, 202, 240, 0.8), 0 0 40px rgba(13, 202, 240, 0.4);
 }
 
-/* Animasi Fade-In Up khusus Section Connect */
+
 .fade-in-up {
     animation: fadeInUp 1.2s ease-out forwards;
 }
