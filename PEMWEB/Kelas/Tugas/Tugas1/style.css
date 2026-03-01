@@ -1,0 +1,235 @@
+/* =========================================
+   Background & Typography
+   ========================================= */
+body {
+    /* REVISI: Background Gradient Midnight Blue ke Dark Charcoal */
+    background: linear-gradient(135deg, #0a1128 0%, #121212 100%) !important;
+    background-attachment: fixed; /* Mencegah gradient terputus saat di-scroll */
+    
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+/* =========================================
+   Navbar Sederhana
+   ========================================= */
+.custom-navbar {
+    background: rgba(10, 17, 40, 0.8); /* Disesuaikan sedikit agar menyatu dengan gradient */
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-link {
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #0d6efd !important;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   Animasi Fade-in Sederhana
+   ========================================= */
+.fade-in {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================================
+   Hero Section & Typography
+   ========================================= */
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, #0dcaf0, #0d6efd);
+    -webkit-background-clip: text;
+    background-clip: text; /* Tambahkan baris ini biar VS Code gak rewel */
+    -webkit-text-fill-color: transparent;
+}
+
+/* =========================================
+   Image Glow Effect (Hero Section)
+   ========================================= */
+.img-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.glow-effect {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, rgba(13, 110, 253, 0.4) 0%, rgba(13, 202, 240, 0) 70%);
+    z-index: 0;
+    filter: blur(40px);
+    border-radius: 50%;
+}
+
+.profile-img-large {
+    width: 100%;
+    max-width: 380px;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.profile-img-large:hover {
+    transform: scale(1.05) translateY(-10px);
+    border-color: rgba(13, 202, 240, 0.5);
+}
+
+/* =========================================
+   Glassmorphism Cards (Skills & Experience)
+   ========================================= */
+.glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    transition: all 0.4s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.glass-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(13, 202, 240, 0.3);
+    box-shadow: 0 15px 40px rgba(13, 110, 253, 0.15);
+}
+
+/* Glass Badge (Hero) */
+.glass-badge {
+    background: rgba(13, 202, 240, 0.1);
+    border: 1px solid rgba(13, 202, 240, 0.2);
+}
+
+/* Icon Box inside Cards */
+.icon-box-glass {
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.text-sm {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* =========================================
+   Card & Form Elements (Untuk halaman Contact)
+   ========================================= */
+.custom-card {
+    background-color: rgba(255, 255, 255, 0.03); /* Sedikit transparan agar menyatu dengan background */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+}
+
+.custom-input {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: #fff !important;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-input:focus {
+    border-color: #0d6efd !important;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25) !important;
+}
+
+.custom-input::placeholder {
+    color: #6c757d;
+}
+
+/* =========================================
+   Button Styling & Hover
+   ========================================= */
+.custom-btn {
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #0d6efd, #0a58ca);
+    border: none;
+}
+
+.custom-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(13, 110, 253, 0.4);
+}
+
+/* =========================================
+   REVISI: CONNECT WITH ME SECTION
+   ========================================= */
+.connect-section {
+    min-height: 80vh; 
+    width: 100%;
+    /* EDIT FOTO DI SINI */
+    background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.connect-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 0; 
+}
+
+.connect-section .z-1 {
+    z-index: 1;
+}
+
+/* Styling Social Icons & Hover Effect */
+.social-icon {
+    font-size: 2.5rem;
+    display: inline-block;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.social-icon:hover {
+    transform: translateY(-10px) scale(1.15);
+    color: #0dcaf0 !important;
+    text-shadow: 0 0 20px rgba(13, 202, 240, 0.8), 0 0 40px rgba(13, 202, 240, 0.4);
+}
+
+/* Animasi Fade-In Up khusus Section Connect */
+.fade-in-up {
+    animation: fadeInUp 1.2s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
